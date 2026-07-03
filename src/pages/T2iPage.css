@@ -1,0 +1,461 @@
+/* ===== T2i 页面样式 ===== */
+.t2i-page {
+  padding: 40px 0 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 顶部标题区 */
+.t2i-title-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.t2i-eyebrow {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: var(--seed-teal, #6ce6ff);
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.t2i-main-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--seed-paper, #e8e4d9);
+  margin: 0 0 20px;
+  letter-spacing: 8px;
+}
+
+.t2i-main-desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(232, 228, 217, 0.7);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Hero 主视觉 */
+.t2i-hero-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 80px;
+  border: 1px solid rgba(108, 230, 255, 0.15);
+  background: linear-gradient(135deg, rgba(20, 47, 79, 0.6), rgba(5, 16, 30, 0.9));
+}
+
+.t2i-hero-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.t2i-hero-mask {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    rgba(5, 16, 30, 0.85) 100%
+  );
+}
+
+.t2i-hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  color: var(--seed-paper, #e8e4d9);
+}
+
+.t2i-hero-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--seed-teal, #6ce6ff);
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.t2i-hero-content h2 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--seed-paper, #e8e4d9);
+  text-wrap: balance;
+}
+
+.t2i-hero-content p {
+  font-family: var(--font-display);
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(232, 228, 217, 0.75);
+  margin: 0 0 28px;
+  max-width: 640px;
+  text-wrap: balance;
+}
+
+.t2i-tags {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.t2i-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: rgba(108, 230, 255, 0.08);
+  border: 1px solid rgba(108, 230, 255, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.t2i-tag:hover {
+  background: rgba(108, 230, 255, 0.15);
+  border-color: rgba(108, 230, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.tag-icon {
+  font-size: 18px;
+  color: var(--seed-teal, #6ce6ff);
+}
+
+.t2i-tag strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--seed-paper, #e8e4d9);
+  margin-bottom: 2px;
+}
+
+.t2i-tag em {
+  font-style: normal;
+  font-size: 11px;
+  color: rgba(232, 228, 217, 0.6);
+}
+
+/* 案例演示标题 */
+.t2i-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+  padding: 0 20px;
+}
+
+.t2i-section-heading .heading-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(108, 230, 255, 0.3),
+    transparent
+  );
+}
+
+.t2i-section-heading h2 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--seed-paper, #e8e4d9);
+  margin: 0 0 6px;
+  text-wrap: balance;
+}
+
+.t2i-section-heading p {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: rgba(232, 228, 217, 0.5);
+  margin: 0;
+  text-align: center;
+  text-wrap: balance;
+}
+
+/* 案例网格 */
+.t2i-case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.t2i-case-card {
+  background: linear-gradient(135deg, rgba(20, 47, 79, 0.5), rgba(5, 16, 30, 0.8));
+  border: 1px solid rgba(108, 230, 255, 0.12);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.t2i-case-card:hover {
+  border-color: rgba(108, 230, 255, 0.3);
+  animation: wobbleLift4 900ms ease-in-out infinite, rippleRing 650ms ease-out;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.case-card-header {
+  padding: 24px 28px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.case-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 6px 12px;
+  background: rgba(108, 230, 255, 0.15);
+  color: var(--seed-teal, #6ce6ff);
+  border-radius: 6px;
+  border: 1px solid rgba(108, 230, 255, 0.3);
+}
+
+.case-badge.purple {
+  background: rgba(159, 140, 255, 0.15);
+  color: #9f8cff;
+  border-color: rgba(159, 140, 255, 0.3);
+}
+
+.case-card-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--seed-paper, #e8e4d9);
+  margin: 0;
+}
+
+.case-image-wrap {
+  padding: 0 28px 24px;
+}
+
+.case-image-wrap img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(108, 230, 255, 0.1);
+}
+
+.prompt-info-list {
+  padding: 0 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.prompt-info-item {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgba(108, 230, 255, 0.06);
+}
+
+.prompt-info-item span {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--seed-teal, #6ce6ff);
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.prompt-info-item p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(232, 228, 217, 0.75);
+  margin: 0;
+}
+
+/* 提示词结构与全流程 */
+.t2i-process-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 60px;
+  background: linear-gradient(135deg, rgba(20, 47, 79, 0.4), rgba(5, 16, 30, 0.7));
+  border: 1px solid rgba(108, 230, 255, 0.12);
+  border-radius: 24px;
+  margin-bottom: 80px;
+}
+
+.process-left {
+  color: var(--seed-paper, #e8e4d9);
+}
+
+.process-label {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--seed-teal, #6ce6ff);
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
+.process-left h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: var(--seed-paper, #e8e4d9);
+  text-wrap: balance;
+}
+
+.process-left > p {
+  font-family: var(--font-display);
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(232, 228, 217, 0.7);
+  margin: 0 0 32px;
+  text-wrap: balance;
+}
+
+.flow-chain {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.flow-chain div {
+  padding: 10px 18px;
+  background: rgba(108, 230, 255, 0.1);
+  border: 1px solid rgba(108, 230, 255, 0.25);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--seed-paper, #e8e4d9);
+}
+
+.flow-chain span {
+  color: rgba(108, 230, 255, 0.5);
+  font-size: 14px;
+}
+
+.flow-chain.second {
+  padding-left: 20px;
+}
+
+.process-points {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.process-point {
+  padding: 16px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-left: 3px solid var(--seed-teal, #6ce6ff);
+}
+
+.process-point strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--seed-paper, #e8e4d9);
+  margin-bottom: 4px;
+}
+
+.process-point p {
+  font-size: 13px;
+  color: rgba(232, 228, 217, 0.6);
+  margin: 0;
+}
+
+.process-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-right img {
+  max-width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(108, 230, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* 底部总结 */
+.t2i-final-rule {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(20, 47, 79, 0.3), rgba(5, 16, 30, 0.5));
+  border: 1px solid rgba(108, 230, 255, 0.1);
+  border-radius: 16px;
+}
+
+.t2i-final-rule span {
+  display: block;
+  font-size: 14px;
+  color: rgba(232, 228, 217, 0.5);
+  margin-bottom: 8px;
+}
+
+.t2i-final-rule strong {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--seed-teal, #6ce6ff);
+  letter-spacing: 2px;
+}
+
+/* 响应式 */
+@media (max-width: 900px) {
+  .t2i-case-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .t2i-process-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  .t2i-hero-content {
+    padding: 24px;
+  }
+  
+  .t2i-hero-content h2 {
+    font-size: 24px;
+  }
+  
+  .t2i-tags {
+    gap: 12px;
+  }
+  
+  .t2i-tag {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .t2i-page {
+    padding: 20px 0 60px;
+  }
+  
+  .t2i-main-title {
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+  
+  .t2i-hero-img {
+    height: 280px;
+  }
+  
+  .t2i-section-heading {
+    padding: 0;
+  }
+  
+  .flow-chain {
+    flex-wrap: wrap;
+  }
+}
